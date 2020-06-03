@@ -1,5 +1,6 @@
 package edu.cnm.deepdive.animals.controller;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.webkit.WebResourceRequest;
@@ -62,7 +63,7 @@ public class ImageFragment extends Fragment {
           .excludeFieldsWithoutExposeAnnotation()
           .create();
       Retrofit retrofit = new Builder()
-          .baseUrl("https://us-central1-apis-4674e.cloudfunctions.net")
+          .baseUrl(BuildConfig.BASE_URL)
           .addConverterFactory(GsonConverterFactory.create(gson))
           .build();
 

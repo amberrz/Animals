@@ -8,4 +8,11 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+  <style name="Toolbar"
+    parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textSize">21sp</item>
+    <item name="android:textColor">@color/title_color</item>
+
+  </style>
+
 </resources>
